@@ -22,15 +22,31 @@ def printMultiplicationTable():
     for number in range(1,10):
         print(f'{typpedNumber} x {number} = {typpedNumber * number}')
 
-def sumOfAllNumbers():
-    numbers = [1,2,4,66,89,44, None ,57, 'aaa']
+def sumOfAllNumbers(numbers):
     sum = 0
+    count = 0;
     for number in numbers:
         try:
             sum += number
+            count += 1
         except:
             print(f'{number} is not a valid number!')
+    return sum
 
-    print(sum)
+def countNumbers(numbers):
+    count = 0;
+    for number in numbers:
+        try:
+            sum = number + number
+            count += 1
+        except:
+            pass
+    return count
 
-sumOfAllNumbers()
+def calculateAverageNumbers():
+    numbers = [1,2,4,66,89,44, None ,57, 'aaa']
+    sum = sumOfAllNumbers(numbers)
+    count = countNumbers(numbers)
+    return sum / count
+
+print(calculateAverageNumbers())
