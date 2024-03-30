@@ -4,9 +4,17 @@ names = ['Luhan', 'Natália', 'Roberto', 'Luane']
 
 years = [2003,2024]
 
-sum = 0
-for number in oneToTen:
-    if(number % 2 == 0):
-        sum += number
 
-print(sum)
+def sumOfEvenNumbers():
+    sum = 0
+    for number in oneToTen:
+        if(number % 2 == 0):
+            sum += number
+    return sum
+
+
+def printInDedescendingOrder():
+    for i in range(10, 0, -1):
+        print(i)
+
+printInDedescendingOrder()
