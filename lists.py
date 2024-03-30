@@ -17,4 +17,9 @@ def printInDedescendingOrder():
     for i in range(10, 0, -1):
         print(i)
 
-printInDedescendingOrder()
+def printMultiplicationTable():
+    typpedNumber = int(input("Enter the number: "))
+    for number in range(1,10):
+        print(f'{typpedNumber} x {number} = {typpedNumber * number}')
+
+printMultiplicationTable()
