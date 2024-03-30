@@ -22,4 +22,15 @@ def printMultiplicationTable():
     for number in range(1,10):
         print(f'{typpedNumber} x {number} = {typpedNumber * number}')
 
-printMultiplicationTable()
+def sumOfAllNumbers():
+    numbers = [1,2,4,66,89,44, None ,57, 'aaa']
+    sum = 0
+    for number in numbers:
+        try:
+            sum += number
+        except:
+            print(f'{number} is not a valid number!')
+
+    print(sum)
+
+sumOfAllNumbers()
